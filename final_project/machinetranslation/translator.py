@@ -23,8 +23,7 @@ authenticator = IAMAuthenticator(LANGUAGE_TRANSLATOR_APIKEY)
 lt = LanguageTranslatorV3(version="2018-05-01",authenticator=authenticator)
 lt.set_service_url(LANGUAGE_TRANSLATOR_URL)
 
-#language_translator.set_service_url('https://api.us-south.language
-# translator.watson.cloud.ibm.com')
+lt.set_service_url('https://api.us-south.language-translator.watson.cloud.ibm.com')
 
 def english_to_french(request):
     """
